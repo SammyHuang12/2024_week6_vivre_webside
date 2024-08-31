@@ -1,0 +1,25 @@
+//Enable responsive 
+//對某一個已有的通用類別設定開啟RWD功能
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+    "width": (
+      responsive: true,
+      property: width,
+      class: w,
+      values: (
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    )
+  )
+);

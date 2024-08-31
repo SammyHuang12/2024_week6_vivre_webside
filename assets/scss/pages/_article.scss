@@ -1,0 +1,29 @@
+.article{
+
+    .breadcrumb{
+        li{
+            line-height: 1.5;
+
+            @include pad(){
+                line-height: 2;
+            }
+        }    
+    }
+
+    .title{
+        margin-bottom: 40px;
+        
+        @include pad(){
+            margin-bottom: 28px;
+        }
+    }    
+}
+
+.content{
+    gap: $spacer * 2.5;
+    margin-bottom: 100px;
+    // outline: blue 1px solid;
+    @include pad(){
+        gap:$spacer * 1.5;
+    }
+}

@@ -1,0 +1,100 @@
+.header{
+	.logo{  
+		width: 96px;
+		height: 28px;
+		background-image: url('../images/logo.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		@include hide-text;
+		@include mobile(){		
+			width: 68px;
+			height: 20px;	
+		}
+	}
+
+	&-line{
+		display: inherit;
+		flex-wrap: inherit;
+		align-items: center;
+		border-bottom: 1px solid $gray-500;
+		@include pad(){
+			border-bottom: 0;
+		}
+	}
+}
+// .container{
+// 	outline:1px solid red;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//老師上課例子
+//欄
+// .column{
+// 	// width: calc(25% - 18px);
+// 	width: 25%;
+// 	padding:0 12px;  //gutter,每個卡片的間距
+// 	@include pad(){
+// 		width: 50%;
+// 	}
+// 	@include mobile(){
+// 		width: 100%;
+// 	}
+// }
+
+// //內容
+//  .card{  
+// 	border: 1px solid black;
+// 	padding: 20px;
+// 	margin-bottom: 24px;
+// 	height: 100%;  //使卡片一樣高
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// //為了要把最左右兩邊的的padding 12px消除,但會出現X軸
+// .card-row{
+// 	margin: 0 -12px;
+// }
+
+// .button{
+// 	height: 44px;
+// 	background-color: gray;
+// 	// margin-top: auto;
+// }
+
+// .card >.button{ //僅限於.card內的第一層
+// 	margin-top: auto;
+// }
